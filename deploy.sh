@@ -1,2 +1,2 @@
 #!/bin/bash
-rm termux_data.tar && tar -cf termux_data.tar home usr && adb push termux_data.tar sdcard/Download && adb shell 'su -c "cd /data/data/com.termux/files && rm -rf * && tar -xf /sdcard/Download/termux_data.tar && chmod -R 777 ."'
+rm termux_data.tar && tar -cf termux_data.tar usr && adb push termux_data.tar sdcard/Download && adb shell 'su -c "cd /data/data/com.termux/files && rm -rf * && tar -xf /sdcard/Download/termux_data.tar && chmod -R 777 ."'

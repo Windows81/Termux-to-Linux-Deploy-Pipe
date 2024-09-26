@@ -11,7 +11,7 @@ Here's what I do to deploy my minified environment to my phone:
 1. Create a tar file from the repo's `./usr` directory:
 
 ```sh
-tar -cf termux_data.tar home usr
+tar -cf termux_data.tar usr
 ```
 
 2. Push the file to the Android device:
