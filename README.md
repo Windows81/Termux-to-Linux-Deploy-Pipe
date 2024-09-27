@@ -1,10 +1,6 @@
-<img src="./Screenshot_20240927-064933.png" align="left" height="500" alt="A screenshot of Termux running with the output of a Linux Deploy shell">
-
 ## !
 
 You know how [Termux](https://github.com/termux/termux-app/releases) runs its own chroot inside your _rooted Android devices_? Why need it if you'd also have a [_Linux Deploy_](https://github.com/lateautumn233/Linuxdeploy-Pro/releases) deployment deployed? This project automatically redirects my Termux console to my Linux Deploy installation in all cases.
-
----
 
 ## ?
 
@@ -44,3 +40,7 @@ chmod -R 777 .
 ```
 
 5. Don't forget to restart Termux.
+
+## ...
+
+![A screenshot of Termux running with the output of a Linux Deploy shell.](./Screenshot_20240927-064933.png)
