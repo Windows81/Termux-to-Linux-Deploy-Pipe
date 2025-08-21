@@ -6,4 +6,4 @@ LD_ENV_PATH=$(su -c "cat /data/data/ru.meefik.linuxdeploy/shared_prefs/settings_
 # Sets to the default path just in case anything happens.
 if [ -z "$LD_ENV_PATH" ]; then LD_ENV_PATH=/data/user/0/ru.meefik.linuxdeploy/files; fi
 
-su -c $LD_ENV_PATH/bin/linuxdeploy shell "$@"
+su -i -c $LD_ENV_PATH/bin/linuxdeploy shell "$@"
