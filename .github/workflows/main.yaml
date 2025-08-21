@@ -23,7 +23,7 @@ jobs:
    - name: Create tar file
      run: |
       mkdir -p ./release
-      tar -cf -v ./termux_data.tar ./usr .
+      tar -cf ./termux_data.tar ./usr .
 
    - name: Create release
      uses: softprops/action-gh-release@v2
