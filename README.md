@@ -11,13 +11,13 @@ Here's what I do to deploy my minified environment to my phone:
 1. Create a tar file from the repo's `./usr` directory (or download the [`termux_data.tar`](./termux_data.tar) that's provided):
 
 ```sh
-tar -cf termux_data.tar usr
+tar -cf ./termux_data.tar ./usr
 ```
 
 2. Push the file to the Android device:
 
 ```sh
-adb push termux_data.tar /sdcard/Download
+adb push ./termux_data.tar /sdcard/Download
 ```
 
 3. Open a root shell on the Android device:

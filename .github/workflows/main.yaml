@@ -1,0 +1,31 @@
+name: Create and Publish Tar Release
+
+on:
+ push:
+  tags:
+   - "*"
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout code
+     uses: actions/checkout@v4
+
+   - name: Set current datetime
+     id: set_datetime
+     run: |
+      echo "RELEASE_DATETIME=$(date +%Y%m%dT%HZ)" >> $GITHUB_ENV
+
+   - name: Create tar file
+     run: |
+      mkdir -p ./release
+      tar -cf -v ./termux_data.tar ./usr .
+
+   - name: Create release
+     uses: softprops/action-gh-release@v2
+     with:
+      files: ./termux_data.tar
+      name: ${{ env.RELEASE_DATETIME }}
+      tag_name: ${{ env.RELEASE_DATETIME }}
+      generate_release_notes: true
