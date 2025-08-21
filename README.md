@@ -10,7 +10,7 @@ Here's what I do to deploy my minified environment to my phone:
 
 1. Download the [`termux_data.tar`](https://github.com/Windows81/Termux-to-Linux-Deploy-Pipe/releases/download/latest/termux_data.tar) that's provided:
 
-````sh
+```sh
 cd /sdcard/Download
 wget https://github.com/Windows81/Termux-to-Linux-Deploy-Pipe/releases/latest/download/termux_data.tar
 ```
@@ -26,4 +26,7 @@ cd /data/data/com.termux/files && rm -rf ./usr && tar -xf /sdcard/Download/termu
 ## ...
 
 ![A screenshot of Termux running with the output of a Linux Deploy shell.](./Screenshot_20240927-064933.png)
-````
+
+```
+
+```
