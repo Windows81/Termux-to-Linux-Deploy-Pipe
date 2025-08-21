@@ -8,7 +8,7 @@ Here's what I do to deploy my minified environment to my phone:
 
 0. Ensure that the _Mount Namespace Mode_ in Magisk is set to _Global_.
 
-1. Create a tar file from the repo's `./usr` directory (or download the [`termux_data.tar`](./termux_data.tar) that's provided):
+1. Create a tar file from the repo's `./usr` directory (or download the [`termux_data.tar`](https://github.com/Windows81/Termux-to-Linux-Deploy-Pipe/releases/download/latest/termux_data.tar) that's provided):
 
 ```sh
 tar -cf ./termux_data.tar ./usr
