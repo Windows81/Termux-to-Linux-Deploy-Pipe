@@ -18,7 +18,7 @@ wget https://github.com/Windows81/Termux-to-Linux-Deploy-Pipe/releases/latest/do
 2. Replace the files in Termux's app storage under `su` mode:
 
 ```sh
-cd /data/data/com.termux/files && rm -rf ./usr && tar -xf /sdcard/Download/termux_data.tar && chmod -R 777 .
+rm -rf /data/data/com.termux/files/usr && cd /data/data/com.termux/files && tar -xf /sdcard/Download/termux_data.tar && chmod -R 777 .
 ```
 
 3. Don't forget to restart Termux.
